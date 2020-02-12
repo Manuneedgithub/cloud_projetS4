@@ -102,12 +102,12 @@ int main ()
 	
 	
 	create_contact(&name,&email,&genre,&number);
-	/*const char * command1 = "git add . ";
+	const char * command1 = "git add . ";
 	const char * command2 = "git commit -m New_contact";
 	const char * command3 = "git push git@github.com:Manuneedgithub/cloud_projetS4.git";
 	system( command1);
 	system( command2);
-	system( command3);*/
+	system( command3);
 
 	return 1;
 }
