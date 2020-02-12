@@ -10,7 +10,7 @@
 
 
 
-void create_name_file(char *name)//int *genre, char *rep )
+void create_name_file(char name)//int *genre, char *rep )
 {
 	FILE *fichier = NULL;
 	char *buff;
@@ -23,7 +23,7 @@ void create_name_file(char *name)//int *genre, char *rep )
 
 }
 
-void create_genre_file(char *genre, char *name)//int *genre, char *rep )
+void create_genre_file(char genre, char name)//int *genre, char *rep )
 {
 	FILE *fichier = NULL;
 	char *buff;
@@ -36,7 +36,7 @@ void create_genre_file(char *genre, char *name)//int *genre, char *rep )
 
 }
 
-void create_number_file(char *number, char *name)//int *number, char *rep )
+void create_number_file(char number, char name)//int *number, char *rep )
 {
 	FILE *fichier = NULL;
 	char *buff;
@@ -49,7 +49,7 @@ void create_number_file(char *number, char *name)//int *number, char *rep )
 
 }
 
-void create_email_file(char *email, char *name)//char *email, char *rep )
+void create_email_file(char email, char name)//char *email, char *rep )
 {
 	FILE *fichier = NULL;
 	char *buff;
@@ -62,7 +62,7 @@ void create_email_file(char *email, char *name)//char *email, char *rep )
 
 }
 
-void create_contact(char *name,char *email,char *genre,char *number)
+void create_contact(char name,char email,char genre,char number)
 {
 	
 	mkdir(name,0777);
@@ -88,20 +88,20 @@ int main ()
 	char *genre;
 
 	printf("give the new contact name please\n");
-	scanf("%s",&name);
+	scanf("%s",name);
 
 	printf("give the new contact email please\n");
-	scanf("%s",&email);
+	scanf("%s",email);
 
 	printf("give the new contact number please\n");
-	scanf("%s",&number);
+	scanf("%s",number);
 
 	printf("give the new contact genre please\n");
-	scanf("%s",&genre);
+	scanf("%s",genre);
 
 	
 	
-	create_contact(&name,&email,&genre,&number);
+	create_contact(name,email,genre,number);
 	const char * command1 = "git add .";
 	const char * command2 = "git commit -m New_contact";
 	const char * command3 = "git push git@github.com:Manuneedgithub/cloud_projetS4.git";
